@@ -1,0 +1,74 @@
+{
+  "name": "@yummies/starter-kit",
+  "version": "0.0.0",
+  "description": "Yummies Starter Kit",
+  "homepage": "https://github.com/yummies/starter-kit",
+  "repository": "yummies/starter-kit",
+  "contributors": [
+    "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
+    "Denis Koltsov <iam@mistadikay.com> (https://github.com/mistadikay)"
+  ],
+  "devDependencies": {
+    "husky": "0.7.x",
+    "eslint": "0.21.x",
+    "babel-eslint": "3.1.x",
+
+    "webpack-dev-server": "1.8.x",
+    "isparta-loader": "0.2.x",
+    "mocha": "2.2.x",
+    "chai": "2.3.x",
+    "karma": "0.12.31",
+    "karma-mocha": "0.1.x",
+    "karma-mocha-reporter": "1.0.x",
+    "karma-chrome-launcher": "0.1.x",
+    "karma-phantomjs-shim": "1.0.x",
+    "karma-phantomjs-launcher": "0.1.x",
+    "karma-webpack": "1.5.x",
+    "karma-coverage": "0.3.x",
+    "karma-clear-screen-reporter": "0.0.x"
+  },
+  "dependencies": {
+    "webpack": "1.9.x",
+    "style-loader": "0.12.x",
+    "css-loader": "0.12.x",
+    "autoprefixer-loader": "1.2.x",
+    "less": "2.5.x",
+    "less-loader": "2.2.x",
+    "extract-text-webpack-plugin": "0.8.x",
+    "html-webpack-plugin": "1.3.x",
+
+    "babel": "5.2.x",
+    "babel-runtime": "5.2.x",
+    "babel-core": "5.2.x",
+    "babel-loader": "5.0.x",
+
+    "react": "0.13.x",
+    "@yummies/yummies": "0.10.x",
+    "@yummies/babel-plugin-yummies": "0.1.x",
+    "@yummies/common-styles-loader": "0.4.x",
+    "@yummies/core-components": "0.11.x",
+    "@yummies/theme-reset": "0.1.x",
+
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-util": "3.0.x",
+    "gulp-uglify": "1.2.x",
+    "gulp-minify-css": "1.1.x",
+    "gulp-rename": "1.2.x",
+    "del": "1.1.x"
+  },
+  "scripts": {
+    "gulp": "babel-node ./node_modules/.bin/gulp --gulpfile gulpfile.es6",
+    "build": "NODE_ENV=production npm run gulp build",
+    "dev": "NODE_ENV=development npm run gulp dev",
+    "test-build": "NODE_ENV=test npm run gulp karma:build",
+    "test-dev": "NODE_ENV=test npm run gulp karma:dev",
+    "lint": "eslint --ext .es6 .",
+
+    "precommit": "npm run lint",
+    "start": "npm run dev",
+    "test": "npm run lint && npm run test-build"
+  },
+  "engines": {
+      "node": ">=2.0.0"
+  }
+}
