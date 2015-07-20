@@ -4,9 +4,10 @@ WIP
 
 ### structure
 
+* `.yummies.yml` – main Yummies config
 * `build/` – output folder
-* `conf/` – configs
-* `gulp/` – gulpo tasks
+* `conf/` – webpack configs
+* `gulp/` – gulp tasks
 * `src/index.es6` – main entry point
 * `src/components/` – current layer's components
 
