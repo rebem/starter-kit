@@ -10,6 +10,12 @@ WIP
 * `src/index.es6` – main entry point
 * `src/components/` – current layer's components
 
+## install
+
+```
+npm i
+```
+
 ### dev
 
 ```
