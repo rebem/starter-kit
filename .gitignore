@@ -1,6 +1,4 @@
 node_modules/
 build/
-coverage/
-tmp/
 *.log
 .DS_Store

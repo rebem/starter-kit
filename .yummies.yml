@@ -1,0 +1,8 @@
+files:
+  main: index.es6
+  styles: styles.less
+
+layers:
+  - node_modules/@yummies/core-components/components/
+  - node_modules/@yummies/theme-reset/components/
+  - src/components/

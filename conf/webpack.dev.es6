@@ -1,0 +1,47 @@
+import path from 'path';
+import webpack from 'webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+
+import webpackCommonConfig from './webpack.common';
+import autoprefixerConfig from './autoprefixer';
+
+export default {
+    ...webpackCommonConfig,
+    entry: [
+        'webpack/hot/dev-server',
+        './src/index'
+    ],
+    output: {
+        ...webpackCommonConfig.output,
+        path: path.resolve('./'),
+        publicPath: '/',
+        filename: 'bundle.js'
+    },
+    // devtool: '#cheap-module-eval-source-map',
+    module: {
+        preLoaders: webpackCommonConfig.module.preLoaders,
+        loaders: [
+            ...webpackCommonConfig.module.loaders,
+            {
+                test: /\.less$/,
+                loaders: [
+                    'style',
+                    'css?-minimize',
+                    'autoprefixer?' + autoprefixerConfig,
+                    'less'
+                ]
+            }
+        ]
+    },
+    plugins: [
+        ...webpackCommonConfig.plugins,
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoErrorsPlugin(),
+        new HtmlWebpackPlugin({
+            template: 'src/assets/index.dev.html',
+            assets: {
+                bundle: 'bundle.js'
+            }
+        })
+    ]
+};
