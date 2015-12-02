@@ -1,3 +1,4 @@
+import path from 'path';
 import webpack from 'webpack';
 
 export default {
@@ -9,14 +10,21 @@ export default {
     output: {
         pathinfo: true
     },
-    resolve: {
-        extensions: [ '', '.js', '.json' ]
-    },
     module: {
         preLoaders: [
             {
                 test: /\.js$/,
-                loader: 'babel'
+                include: [
+                    path.resolve('src/'),
+                    path.resolve('node_modules/@yummies/core-components/')
+                ],
+                exclude: [
+                    path.resolve('node_modules/@yummies/core-components/node_modules/')
+                ],
+                loaders: [
+                    '@yummies/inheritance-loader',
+                    'babel?cacheDirectory'
+                ]
             }
         ],
         loaders: [

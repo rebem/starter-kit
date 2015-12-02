@@ -8,50 +8,43 @@
     "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
     "Denis Koltsov <iam@mistadikay.com> (https://github.com/mistadikay)"
   ],
-  "devDependencies": {
-    "husky": "0.9.x",
-
-    "eslint": "0.24.x",
-    "babel-eslint": "4.0.x",
-    "eslint-plugin-babel": "1.2.x",
-
-    "webpack-dev-server": "1.10.x"
-  },
   "dependencies": {
-    "webpack": "1.10.x",
-    "style-loader": "0.12.x",
-    "css-loader": "0.15.x",
-    "autoprefixer-loader": "2.0.x",
-    "less": "2.5.x",
+    "webpack": "1.12.x",
+    "style-loader": "0.13.x",
+    "css-loader": "0.23.x",
+    "autoprefixer-loader": "3.1.x",
+    "less": "2.3.x",
     "less-loader": "2.2.x",
     "json-loader": "0.5.x",
-    "extract-text-webpack-plugin": "0.8.x",
-    "html-webpack-plugin": "1.6.x",
-
+    "extract-text-webpack-plugin": "0.9.x",
+    "html-webpack-plugin": "1.7.x",
     "babel": "5.8.x",
     "babel-runtime": "5.8.x",
     "babel-core": "5.8.x",
     "babel-loader": "5.3.x",
-
-    "react": "0.13.x",
-    "@yummies/yummies": "0.12.x",
-    "@yummies/babel-plugin-yummies": "0.4.x",
-    "@yummies/core-components": "0.17.x",
-    "@yummies/theme-reset": "0.1.x",
-
-    "gulp": "gulpjs/gulp#4.0",
-    "gulp-util": "3.0.x",
-    "del": "1.2.x"
+    "react": "0.14.x",
+    "@yummies/yummies": "1.0.x",
+    "@yummies/dom": "1.0.x",
+    "@yummies/inheritance-loader": "0.0.x",
+    "@yummies/core-components": "0.21.x",
+    "@yummies/theme-reset": "0.2.x",
+    "start": "1.1.x",
+    "del": "2.1.x"
+  },
+  "devDependencies": {
+    "husky": "0.10.x",
+    "eslint": "1.10.x",
+    "babel-eslint": "4.1.x",
+    "eslint-plugin-babel": "3.0.x",
+    "webpack-dev-server": "1.14.x"
   },
   "scripts": {
-    "gulp": "babel-node ./node_modules/.bin/gulp --gulpfile gulpfile.js",
-    "build": "NODE_ENV=production npm run gulp build",
-    "dev": "NODE_ENV=development npm run gulp dev",
-    "lint": "eslint .",
-
-    "precommit": "npm run lint",
-    "start": "npm run dev",
-    "test": "npm run lint"
+    "task": "babel-node node_modules/.bin/start tasks/",
+    "lint": "npm run task eslint",
+    "build": "npm run task build",
+    "dev": "npm run task dev",
+    "test": "npm run task test",
+    "precommit": "npm run test"
   },
   "engines": {
     "node": ">=0.12",

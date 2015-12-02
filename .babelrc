@@ -1,5 +1,4 @@
 {
   "optional": [ "runtime" ],
-  "stage": 0,
-  "plugins": [ "@yummies/babel-plugin-yummies" ]
+  "stage": 0
 }

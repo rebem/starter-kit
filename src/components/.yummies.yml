@@ -1,0 +1,4 @@
+files:
+  main: index.js
+  styles: styles.less
+  propTypes: prop-types.js

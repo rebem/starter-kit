@@ -1,4 +1,4 @@
-import Yummies from '@yummies/yummies';
+import YummiesDOM from '@yummies/dom';
 import App from '#app';
 
-Yummies.render(App(), document.getElementById('app'));
+YummiesDOM.render(App(), document.getElementById('app'));
