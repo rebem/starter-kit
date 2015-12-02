@@ -8,7 +8,7 @@ WIP
 * `build/` – output folder
 * `conf/` – webpack configs
 * `gulp/` – gulp tasks
-* `src/index.es6` – main entry point
+* `src/index.js` – main entry point
 * `src/components/` – current layer's components
 
 ## install

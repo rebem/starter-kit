@@ -36,19 +36,18 @@
     "react": "0.13.x",
     "@yummies/yummies": "0.12.x",
     "@yummies/babel-plugin-yummies": "0.4.x",
-    "@yummies/core-components": "0.16.x",
+    "@yummies/core-components": "0.17.x",
     "@yummies/theme-reset": "0.1.x",
-    "@yummies/theme-primer": "0.0.x",
 
     "gulp": "gulpjs/gulp#4.0",
     "gulp-util": "3.0.x",
     "del": "1.2.x"
   },
   "scripts": {
-    "gulp": "babel-node ./node_modules/.bin/gulp --gulpfile gulpfile.es6",
+    "gulp": "babel-node ./node_modules/.bin/gulp --gulpfile gulpfile.js",
     "build": "NODE_ENV=production npm run gulp build",
     "dev": "NODE_ENV=development npm run gulp dev",
-    "lint": "eslint --ext .es6 .",
+    "lint": "eslint .",
 
     "precommit": "npm run lint",
     "start": "npm run dev",

@@ -10,12 +10,12 @@ export default {
         pathinfo: true
     },
     resolve: {
-        extensions: [ '', '.js', '.es6', '.json' ]
+        extensions: [ '', '.js', '.json' ]
     },
     module: {
         preLoaders: [
             {
-                test: /\.es6$/,
+                test: /\.js$/,
                 loader: 'babel'
             }
         ],

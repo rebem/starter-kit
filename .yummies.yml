@@ -1,5 +1,5 @@
 files:
-  main: index.es6
+  main: index.js
   styles: styles.less
 
 layers:
