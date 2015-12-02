@@ -11,7 +11,7 @@ export default {
     entry: {
         vendor: [
             'react',
-            '@yummies/yummies'
+            '@yummies/dom'
         ],
         app: './src/index'
     },
