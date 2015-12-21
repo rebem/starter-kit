@@ -4,12 +4,11 @@ WIP
 
 ## structure
 
-* `.yummies.yml` – root Yummies config
 * `build/` – output folder
 * `conf/` – webpack configs
 * `tasks/` – start tasks
 * `src/index.js` – main entry point
-* `src/components/` – current project layer's components
+* `src/.yummies.yml` – current project layer's config
 
 ## install
 
