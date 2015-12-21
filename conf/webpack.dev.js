@@ -23,6 +23,14 @@ export default {
         loaders: [
             ...webpackCommonConfig.module.loaders,
             {
+                test: /\.css$/,
+                loaders: [
+                    'style',
+                    'css?-minimize',
+                    'autoprefixer?' + autoprefixerConfig
+                ]
+            },
+            {
                 test: /\.less$/,
                 loaders: [
                     'style',

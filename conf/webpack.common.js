@@ -14,17 +14,30 @@ export default {
         preLoaders: [
             {
                 test: /\.js$/,
-                include: [
-                    path.resolve('src/'),
-                    path.resolve('node_modules/@yummies/core-components/')
-                ],
+                loader: '@yummies/inheritance-loader',
+                query: {
+                    layers: [
+                        {
+                            path: path.resolve('node_modules/@yummies/core-components/')
+                        },
+                        {
+                            path: path.resolve('node_modules/@yummies/theme-reset/')
+                        },
+                        {
+                            path: path.resolve('src/')
+                        }
+                    ]
+                }
+            },
+            {
+                test: /\.js$/,
                 exclude: [
-                    path.resolve('node_modules/@yummies/core-components/node_modules/')
+                    path.resolve('node_modules/')
                 ],
-                loaders: [
-                    '@yummies/inheritance-loader',
-                    'babel?cacheDirectory'
-                ]
+                loader: 'babel',
+                query: {
+                    cacheDirectory: true
+                }
             }
         ],
         loaders: [

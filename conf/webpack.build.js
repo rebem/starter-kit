@@ -24,6 +24,14 @@ export default {
         loaders: [
             ...webpackCommonConfig.module.loaders,
             {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract(
+                    'style',
+                    'css?-minimize' +
+                    '!autoprefixer?' + autoprefixerConfig
+                )
+            },
+            {
                 test: /\.less$/,
                 loader: ExtractTextPlugin.extract(
                     'style',

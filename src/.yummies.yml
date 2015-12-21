@@ -1,0 +1,5 @@
+default:
+  path: components/
+  files:
+    main: index.js
+    styles: styles.less
