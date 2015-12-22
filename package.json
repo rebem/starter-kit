@@ -31,10 +31,10 @@
     "babel-loader": "6.2.x",
 
     "react": "0.14.x",
-    "@yummies/yummies": "2.0.x",
+    "@yummies/yummies": "2.1.x",
     "@yummies/dom": "2.0.x",
-    "@yummies/inheritance-loader": "2.1.x",
-    "@yummies/core-components": "1.0.x",
+    "@yummies/inheritance-loader": "3.2.x",
+    "@yummies/core-components": "1.1.x",
     "@yummies/theme-reset": "1.0.x"
   },
   "devDependencies": {
@@ -55,7 +55,7 @@
 
     "lint": "npm run task eslint",
     "test": "npm run task test",
-    
+
     "precommit": "npm run test"
   },
   "engines": {
