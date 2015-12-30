@@ -1,10 +1,11 @@
-import InputRange from '#input?_type=range';
+import { Component } from '@yummies/yummies';
+import InputRange from '#input/_type/range';
 
-export default Base => class extends Base {
-    static displayName = 'range';
+export default class extends Component {
+    static displayName = 'input/_type/range';
 
-    constructor(props) {
-        super(props);
+    constructor(props, context) {
+        super(props, context);
 
         this.state = {
             index: props.index,
@@ -46,4 +47,4 @@ export default Base => class extends Base {
             ]
         };
     }
-};
+}

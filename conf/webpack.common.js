@@ -14,7 +14,7 @@ export default {
         preLoaders: [
             {
                 test: /\.js$/,
-                loader: '@yummies/inheritance-loader',
+                loader: '@yummies/layers-loader',
                 query: {
                     layers: [
                         {

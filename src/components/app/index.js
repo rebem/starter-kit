@@ -1,6 +1,7 @@
+import { Component } from '@yummies/yummies';
 import Range from '#range';
 
-export default Base => class extends Base {
+export default class extends Component {
     static displayName = 'app';
 
     render() {
@@ -13,4 +14,4 @@ export default Base => class extends Base {
             })
         };
     }
-};
+}

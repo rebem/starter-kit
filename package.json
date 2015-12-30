@@ -9,7 +9,7 @@
     "Denis Koltsov <iam@mistadikay.com> (https://github.com/mistadikay)"
   ],
   "dependencies": {
-    "start": "1.1.x",
+    "start": "1.2.x",
     "del": "2.2.x",
 
     "webpack": "1.12.x",
@@ -33,7 +33,7 @@
     "react": "0.14.x",
     "@yummies/yummies": "2.1.x",
     "@yummies/dom": "2.0.x",
-    "@yummies/inheritance-loader": "3.2.x",
+    "@yummies/layers-loader": "0.0.x",
     "@yummies/core-components": "1.1.x",
     "@yummies/theme-reset": "1.0.x"
   },
