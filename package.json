@@ -31,10 +31,10 @@
     "babel-loader": "6.2.x",
 
     "react": "0.14.x",
-    "@yummies/yummies": "2.1.x",
+    "@yummies/yummies": "3.0.0-alpha.1",
     "@yummies/dom": "2.0.x",
     "@yummies/layers-loader": "0.0.x",
-    "@yummies/core-components": "1.1.x",
+    "@yummies/core-components": "2.0.0-alpha.1",
     "@yummies/theme-reset": "1.0.x"
   },
   "devDependencies": {
