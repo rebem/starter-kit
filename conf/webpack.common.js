@@ -18,14 +18,17 @@ export default {
                 query: {
                     layers: [
                         {
-                            path: path.resolve('node_modules/@yummies/core-components/')
+                            module: require('@yummies/core-components')
                         },
                         {
-                            path: path.resolve('node_modules/@yummies/theme-reset/')
+                            module: require('@yummies/theme-reset')
                         },
                         {
-                            path: path.resolve('src/')
+                            module: require('../src/yummies')
                         }
+                    ],
+                    include: [
+                        path.resolve('src/index')
                     ]
                 }
             },

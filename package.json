@@ -30,12 +30,11 @@
     "babel-plugin-add-module-exports": "0.1.x",
     "babel-loader": "6.2.x",
 
-    "react": "0.14.x",
     "@yummies/yummies": "3.0.0-alpha.1",
     "@yummies/dom": "2.0.x",
     "@yummies/layers-loader": "0.0.x",
-    "@yummies/core-components": "2.0.0-alpha.1",
-    "@yummies/theme-reset": "1.0.x"
+    "@yummies/core-components": "2.0.0-alpha.5",
+    "@yummies/theme-reset": "2.0.0-alpha.4"
   },
   "devDependencies": {
     "husky": "0.10.x",
