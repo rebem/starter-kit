@@ -33,8 +33,8 @@
     "@yummies/yummies": "3.0.0-alpha.1",
     "@yummies/dom": "2.0.x",
     "@yummies/layers-loader": "0.0.x",
-    "@yummies/core-components": "2.0.0-alpha.5",
-    "@yummies/theme-reset": "2.0.0-alpha.4"
+    "@yummies/core-components": "2.0.0-alpha.7",
+    "@yummies/theme-reset": "2.0.0-alpha.5"
   },
   "devDependencies": {
     "husky": "0.10.x",

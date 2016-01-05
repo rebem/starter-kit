@@ -17,14 +17,14 @@ export default {
                 loader: '@yummies/layers-loader',
                 query: {
                     layers: [
+                        require('@yummies/core-components'),
+                        require('@yummies/theme-reset'),
                         {
-                            module: require('@yummies/core-components')
-                        },
-                        {
-                            module: require('@yummies/theme-reset')
-                        },
-                        {
-                            module: require('../src/yummies')
+                            path: path.resolve('src/components/'),
+                            files: {
+                                main: 'index.js',
+                                styles: 'styles.less'
+                            }
                         }
                     ],
                     include: [
