@@ -8,7 +8,6 @@ WIP
 * `conf/` – webpack configs
 * `tasks/` – start tasks
 * `src/index.js` – main entry point
-* `src/.yummies.yml` – current project layer's config
 
 ## install
 
