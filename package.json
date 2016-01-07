@@ -19,22 +19,22 @@
     "less": "2.5.x",
     "less-loader": "2.2.x",
     "json-loader": "0.5.x",
-    "extract-text-webpack-plugin": "0.9.x",
+    "extract-text-webpack-plugin": "1.0.x",
     "html-webpack-plugin": "1.7.x",
 
-    "babel-core": "6.3.x",
-    "babel-cli": "6.3.x",
+    "babel-core": "6.4.x",
+    "babel-cli": "6.4.x",
     "babel-preset-es2015": "6.3.x",
     "babel-preset-stage-0": "6.3.x",
-    "babel-plugin-transform-runtime": "6.3.x",
+    "babel-plugin-transform-runtime": "6.4.x",
     "babel-plugin-add-module-exports": "0.1.x",
     "babel-loader": "6.2.x",
 
-    "@yummies/yummies": "3.0.0-alpha.1",
+    "@yummies/yummies": ">=3.0.0-alpha.4",
     "@yummies/dom": "2.0.x",
     "@yummies/layers-loader": "0.0.x",
-    "@yummies/core-components": "2.0.0-alpha.7",
-    "@yummies/theme-reset": "2.0.0-alpha.5"
+    "@yummies/core-components": ">=2.0.0-alpha.7",
+    "@yummies/theme-reset": ">=2.0.0-alpha.5"
   },
   "devDependencies": {
     "husky": "0.10.x",
