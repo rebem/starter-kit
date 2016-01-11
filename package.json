@@ -46,8 +46,7 @@
     "babel-eslint": ">5.0.0-beta1",
     "webpack-dev-server": "1.14.x",
 
-    "babel-plugin-react-transform": "2.0.x",
-    "react-transform-hmr": "1.0.x"
+    "babel-preset-react-hmre": "1.0.x"
   },
   "scripts": {
     "task": "babel-node node_modules/.bin/start tasks/",
