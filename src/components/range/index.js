@@ -17,6 +17,20 @@ export default class extends Component {
         this._onRangeChange = this._onRangeChange.bind(this);
     }
 
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.index !== this.props.index) {
+            this.setState({
+                index: nextProps.index
+            });
+        }
+
+        if (nextProps.max !== this.props.max) {
+            this.setState({
+                max: nextProps.index === nextProps.max
+            });
+        }
+    }
+
     _onRangeChange(e) {
         const index = Number(e.target.value);
 
