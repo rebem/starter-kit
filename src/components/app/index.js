@@ -1,12 +1,12 @@
 import { Component } from 'react';
-import Yummies from '@yummies/yummies';
+import BEM from '@yummies/bem';
 import Range from '#range';
 
 export default class extends Component {
     static displayName = 'app: app';
 
     render() {
-        return Yummies({
+        return BEM({
             block: 'app',
             mods: this.props.mods,
             mix: this.props.mix,

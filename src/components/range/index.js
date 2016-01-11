@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import Yummies from '@yummies/yummies';
+import BEM from '@yummies/bem';
 
 import InputRange from '#input/_type/range';
 
@@ -27,7 +27,7 @@ export default class extends Component {
     }
 
     render() {
-        return Yummies({
+        return BEM({
             block: 'range',
             mods: this.props.mods,
             mix: this.props.mix,
