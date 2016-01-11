@@ -1,8 +1,10 @@
-import { Component } from '@yummies/yummies';
+import { Component } from 'react';
+import BEM from '@yummies/bem';
+
 import InputRange from '#input/_type/range';
 
 export default class extends Component {
-    static displayName = 'input/_type/range';
+    static displayName = 'app: range';
 
     constructor(props, context) {
         super(props, context);
@@ -11,6 +13,8 @@ export default class extends Component {
             index: props.index,
             max: props.index === props.max
         };
+
+        this._onRangeChange = this._onRangeChange.bind(this);
     }
 
     _onRangeChange(e) {
@@ -23,14 +27,20 @@ export default class extends Component {
     }
 
     render() {
-        return {
+        return BEM({
             block: 'range',
+            mods: this.props.mods,
+            mix: this.props.mix,
             content: [
                 InputRange({
                     value: this.state.index,
                     max: this.props.max,
                     step: this.props.step,
-                    onChange: ::this._onRangeChange,
+                    mix: {
+                        block: 'range',
+                        elem: 'input'
+                    },
+                    onChange: this._onRangeChange,
                     key: 'input'
                 }),
                 {
@@ -45,6 +55,6 @@ export default class extends Component {
                     content: this.state.index
                 }
             ]
-        };
+        });
     }
 }

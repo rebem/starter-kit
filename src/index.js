@@ -1,4 +1,4 @@
-import { render } from '@yummies/dom';
+import { render } from 'react-dom';
 import App from '#app';
 
 render(App(), document.getElementById('app'));
