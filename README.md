@@ -20,7 +20,7 @@ npm i
 ### dev
 
 ```
-npm run dev
+npm start
 open http://localhost:3000/webpack-dev-server/
 ```
 

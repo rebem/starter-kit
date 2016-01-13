@@ -52,7 +52,7 @@
     "task": "babel-node node_modules/.bin/start tasks/",
 
     "build": "npm run task build",
-    "dev": "npm run task dev",
+    "start": "npm run task dev",
 
     "lint": "npm run task eslint",
     "test": "npm run task test",
