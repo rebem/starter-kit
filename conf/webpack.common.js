@@ -14,18 +14,21 @@ export default {
         preLoaders: [
             {
                 test: /\.js$/,
-                loader: '@yummies/inheritance-loader',
+                loader: '@yummies/layers-loader',
                 query: {
                     layers: [
+                        require('@yummies/core-components'),
+                        require('@yummies/theme-reset'),
                         {
-                            path: path.resolve('node_modules/@yummies/core-components/')
-                        },
-                        {
-                            path: path.resolve('node_modules/@yummies/theme-reset/')
-                        },
-                        {
-                            path: path.resolve('src/')
+                            path: path.resolve('src/components/'),
+                            files: {
+                                main: 'index.js',
+                                styles: 'styles.less'
+                            }
                         }
+                    ],
+                    include: [
+                        path.resolve('src/index')
                     ]
                 }
             },

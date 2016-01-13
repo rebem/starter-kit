@@ -1,28 +1,22 @@
-const defaults = {
-    min: 0,
-    max: 100,
-    step: 1
-};
+import { Component } from 'react';
 
-export default Base => class extends Base {
-    static displayName = 'input/_type/range';
+import Input from '#input';
+
+export default class extends Component {
+    static displayName = 'app: input/_type/range';
+    static defaultProps = {
+        min: 0,
+        max: 100,
+        step: 1
+    };
 
     render() {
-        const bemjson = super.render();
-
-        bemjson.mods = {
-            ...bemjson.mods,
-            type: 'range'
-        };
-
-        bemjson.content[0].props = {
-            ...bemjson.content[0].props,
+        return Input({
             type: 'range',
-            min: this.props.min || defaults.min,
-            max: this.props.max || defaults.max,
-            step: this.props.step || defaults.step
-        };
-
-        return bemjson;
+            mods: {
+                type: 'range'
+            },
+            ...this.props
+        });
     }
-};
+}

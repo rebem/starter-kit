@@ -8,7 +8,6 @@ WIP
 * `conf/` – webpack configs
 * `tasks/` – start tasks
 * `src/index.js` – main entry point
-* `src/.yummies.yml` – current project layer's config
 
 ## install
 
@@ -21,7 +20,7 @@ npm i
 ### dev
 
 ```
-npm run dev
+npm start
 open http://localhost:3000/webpack-dev-server/
 ```
 
