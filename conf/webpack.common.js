@@ -10,6 +10,11 @@ export default {
     output: {
         pathinfo: true
     },
+    resolve: {
+        alias: {
+            '~': path.resolve('src/')
+        }
+    },
     module: {
         preLoaders: [
             {

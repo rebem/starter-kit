@@ -3,3 +3,9 @@ export function cleanBuild() {
 
     return del([ 'build/' ]);
 }
+
+export function cleanCoverage() {
+    const del = require('del');
+
+    return del([ 'coverage/' ]);
+}
