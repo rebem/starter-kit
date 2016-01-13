@@ -31,7 +31,7 @@
 
     "react": "0.14.x",
     "react-dom": "0.14.x",
-    "@yummies/bem": "0.0.1",
+    "@yummies/bem": "0.0.x",
     "@yummies/layers-loader": "0.0.x",
     "@yummies/core-components": ">=2.0.0-alpha.11",
     "@yummies/theme-reset": ">=2.0.0-alpha.6"
