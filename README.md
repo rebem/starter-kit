@@ -1,6 +1,6 @@
 # Yummies Starter Kit
 
-[![deps](https://img.shields.io/gemnasium/yummies/starter-kit.svg?style=flat-square)](https://gemnasium.com/yummies/starter-kit)
+[![deps](https://img.shields.io/gemnasium/rebem/starter-kit.svg?style=flat-square)](https://gemnasium.com/rebem/starter-kit)
 
 WIP
 
