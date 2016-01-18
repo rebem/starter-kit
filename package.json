@@ -31,10 +31,10 @@
 
     "react": "0.14.x",
     "react-dom": "0.14.x",
-    "@yummies/bem": "0.0.x",
-    "@yummies/layers-loader": "0.0.x",
-    "@yummies/core-components": ">=2.0.0-alpha.11",
-    "@yummies/theme-reset": ">=2.0.0-alpha.6"
+    "rebem": "0.1.x",
+    "rebem-layers-loader": "0.1.x",
+    "rebem-core-components": "0.1.x",
+    "rebem-theme-reset": "0.1.x"
   },
   "devDependencies": {
     "husky": "0.10.x",
@@ -80,7 +80,7 @@
     "tdd": "npm run task tdd",
     "test": "npm run task test",
 
-    "precommit": "npm test"
+    "precommit": "npm run lint"
   },
   "engines": {
     "node": ">=0.12",

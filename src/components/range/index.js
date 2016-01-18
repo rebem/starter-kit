@@ -1,7 +1,8 @@
 import { Component } from 'react';
-import BEM from '@yummies/bem';
+import { BEM } from 'rebem';
 
-import InputRange from '#input/_type/range';
+import RangeInput from '#range/input';
+import RangeIndex from '#range/index';
 
 export default class extends Component {
     static displayName = 'app: range';
@@ -41,34 +42,23 @@ export default class extends Component {
     }
 
     render() {
-        return BEM({
-            block: 'range',
-            mods: this.props.mods,
-            mix: this.props.mix,
-            content: [
-                InputRange({
-                    value: this.state.index,
-                    max: this.props.max,
-                    step: this.props.step,
-                    mix: {
-                        block: 'range',
-                        elem: 'input'
-                    },
-                    onChange: this._onRangeChange,
-                    key: 'input'
-                }),
+        return BEM(
+            {
+                block: 'range'
+            },
+            RangeInput({
+                ...this.props,
+                value: this.state.index,
+                onChange: this._onRangeChange
+            }),
+            RangeIndex(
                 {
-                    elem: 'index',
                     mods: {
                         max: this.state.max
-                    },
-                    tag: 'span',
-                    props: {
-                        key: 'index'
-                    },
-                    content: this.state.index
-                }
-            ]
-        });
+                    }
+                },
+                this.state.index
+            )
+        );
     }
 }

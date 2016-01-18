@@ -12,7 +12,9 @@ export default {
         vendor: [
             'react',
             'react-dom',
-            '@yummies/bem'
+            'rebem',
+            'rebem-core-components',
+            'rebem-theme-reset'
         ],
         app: './src/index'
     },

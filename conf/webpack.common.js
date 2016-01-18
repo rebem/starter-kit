@@ -19,11 +19,11 @@ export default {
         preLoaders: [
             {
                 test: /\.js$/,
-                loader: '@yummies/layers-loader',
+                loader: 'rebem-layers',
                 query: {
                     layers: [
-                        require('@yummies/core-components'),
-                        require('@yummies/theme-reset'),
+                        require('rebem-core-components'),
+                        require('rebem-theme-reset'),
                         {
                             path: path.resolve('src/components/'),
                             files: {
@@ -44,7 +44,7 @@ export default {
                 ],
                 loader: 'babel',
                 query: {
-                    cacheDirectory: true
+                    cacheDirectory: false
                 }
             }
         ],
