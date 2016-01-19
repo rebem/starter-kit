@@ -2,8 +2,8 @@
   "name": "rebem-starter-kit",
   "version": "0.0.0",
   "description": "reBEM Starter Kit",
-  "homepage": "https://github.com/rebem/rebem-starter-kit",
-  "repository": "rebem/rebem-starter-kit",
+  "homepage": "https://github.com/rebem/starter-kit",
+  "repository": "rebem/starter-kit",
   "contributors": [
     "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
     "Denis Koltsov <iam@mistadikay.com> (https://github.com/mistadikay)"
