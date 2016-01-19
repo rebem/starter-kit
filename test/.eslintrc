@@ -1,15 +1,5 @@
----
-  globals:
-    check: true
-    gen: true
-
-  env:
-    mocha: true
-
-  rules:
-    no-invalid-this: 0
-    no-magic-numbers: 0
-    handle-callback-err: 0
-    max-nested-callbacks: 0
-    callback-return: 0
-    max-len: 0
+{
+  "extends": [
+    "rebem/configs/test"
+  ]
+}
