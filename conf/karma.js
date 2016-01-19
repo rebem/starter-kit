@@ -58,7 +58,7 @@ export default {
         // }
     // },
 
-    browsers: [ 'Firefox' ],
+    browsers: [ 'jsdom' ],
 
     browserNoActivityTimeout: 30000, // default 10 * 1000
     browserDisconnectTimeout: 10000, // default 2 * 1000
