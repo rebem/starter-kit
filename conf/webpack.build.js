@@ -1,7 +1,6 @@
 import path from 'path';
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 import webpackCommonConfig from './webpack.common';
 import autoprefixerConfig from './autoprefixer';
@@ -50,14 +49,6 @@ export default {
         new webpack.optimize.CommonsChunkPlugin('vendor', 'js/[name].js'),
         new ExtractTextPlugin('css/[name].css', {
             allChunks: true
-        }),
-        new HtmlWebpackPlugin({
-            template: 'src/assets/index.html',
-            assets: {
-                vendor: 'js/vendor.js',
-                app: 'js/app.js',
-                css: 'css/app.css'
-            }
         }),
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.OccurenceOrderPlugin()

@@ -1,6 +1,5 @@
 import path from 'path';
 import webpack from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 import webpackCommonConfig from './webpack.common';
 import autoprefixerConfig from './autoprefixer';
@@ -44,12 +43,6 @@ export default {
     plugins: [
         ...webpackCommonConfig.plugins,
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin(),
-        new HtmlWebpackPlugin({
-            template: 'src/assets/index.dev.html',
-            assets: {
-                bundle: 'bundle.js'
-            }
-        })
+        new webpack.NoErrorsPlugin()
     ]
 };
