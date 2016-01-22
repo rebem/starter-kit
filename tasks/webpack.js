@@ -12,7 +12,7 @@ export function webpackDev() {
 
     const webpack = require('webpack');
     const WebpackDevServer = require('webpack-dev-server');
-    const clientOnlyDevConfig = require('../conf/webpack.dev');
+    const clientOnlyDevConfig = require('../conf/webpack.dev').default;
 
     return new Promise((resolve, reject) => {
         const server = new WebpackDevServer(webpack(clientOnlyDevConfig), {
@@ -34,7 +34,7 @@ export function webpackBuild() {
     process.env.NODE_ENV = 'production';
 
     const webpack = require('webpack');
-    const isomorphicBuildServerConfig = require('../conf/webpack.build');
+    const isomorphicBuildServerConfig = require('../conf/webpack.build').default;
 
     return new Promise((resolve, reject) => {
         webpack(isomorphicBuildServerConfig, (err, stats) => {

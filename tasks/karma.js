@@ -2,7 +2,7 @@ export function karmaBuild() {
     process.env.NODE_ENV = 'test';
 
     const { Server } = require('karma');
-    const karmaConfig = require('../conf/karma');
+    const karmaConfig = require('../conf/karma').default;
 
     return new Promise((resolve, reject) => {
         const karmaServer = new Server(
@@ -29,7 +29,7 @@ export function karmaDev() {
     process.env.NODE_ENV = 'test';
 
     const { Server } = require('karma');
-    const karmaConfig = require('../conf/karma');
+    const karmaConfig = require('../conf/karma').default;
 
     return new Promise((resolve, reject) => {
         const karmaServer = new Server(
