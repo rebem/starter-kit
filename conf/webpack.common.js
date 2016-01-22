@@ -1,6 +1,7 @@
 import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import autoprefixer from 'autoprefixer';
 
 export default {
     cache: true,
@@ -55,6 +56,18 @@ export default {
                 loader: 'json'
             }
         ]
+    },
+    postcss() {
+        return [
+            autoprefixer({
+                browsers: [
+                    'last 2 Chrome versions',
+                    'last 2 Firefox versions',
+                    'last 2 Safari versions',
+                    'last 2 Explorer versions'
+                ]
+            })
+        ];
     },
     plugins: [
         new webpack.DefinePlugin({

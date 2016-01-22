@@ -3,7 +3,6 @@ import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 import webpackCommonConfig from './webpack.common';
-import autoprefixerConfig from './autoprefixer';
 
 export default {
     ...webpackCommonConfig,
@@ -30,7 +29,7 @@ export default {
                 loader: ExtractTextPlugin.extract(
                     'style',
                     'css?-minimize' +
-                    '!autoprefixer?' + autoprefixerConfig
+                    '!postcss'
                 )
             },
             {
@@ -38,7 +37,7 @@ export default {
                 loader: ExtractTextPlugin.extract(
                     'style',
                     'css?-minimize' +
-                    '!autoprefixer?' + autoprefixerConfig +
+                    '!postcss' +
                     '!less'
                 )
             }

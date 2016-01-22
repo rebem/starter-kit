@@ -1,7 +1,6 @@
 import path from 'path';
 
 import webpackCommonConfig from './webpack.common';
-import autoprefixerConfig from './autoprefixer';
 
 const testingSources = [
     path.resolve('src/components/')
@@ -34,10 +33,9 @@ export default {
                         }
                     ],
                     include: [
-                        path.resolve('src/'),
+                        path.resolve('src/index.js'),
                         path.resolve('test/')
-                    ],
-                    injectable: true
+                    ]
                 }
             },
             {
@@ -67,7 +65,7 @@ export default {
                 loaders: [
                     'style',
                     'css?-minimize',
-                    'autoprefixer?' + autoprefixerConfig
+                    'postcss'
                 ]
             },
             {
@@ -75,7 +73,7 @@ export default {
                 loaders: [
                     'style',
                     'css?-minimize',
-                    'autoprefixer?' + autoprefixerConfig,
+                    'postcss',
                     'less'
                 ]
             }

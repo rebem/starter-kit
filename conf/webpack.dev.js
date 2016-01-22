@@ -2,7 +2,6 @@ import path from 'path';
 import webpack from 'webpack';
 
 import webpackCommonConfig from './webpack.common';
-import autoprefixerConfig from './autoprefixer';
 
 export default {
     ...webpackCommonConfig,
@@ -26,7 +25,7 @@ export default {
                 loaders: [
                     'style',
                     'css?-minimize',
-                    'autoprefixer?' + autoprefixerConfig
+                    'postcss'
                 ]
             },
             {
@@ -34,7 +33,7 @@ export default {
                 loaders: [
                     'style',
                     'css?-minimize',
-                    'autoprefixer?' + autoprefixerConfig,
+                    'postcss',
                     'less'
                 ]
             }
