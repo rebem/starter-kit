@@ -1,5 +1,6 @@
-# Yummies Starter Kit
+# reBEM Starter Kit
 
+[![travis](http://img.shields.io/travis/rebem/starter-kit.svg?style=flat-square)](https://travis-ci.org/rebem/starter-kit)
 [![deps](https://img.shields.io/gemnasium/rebem/starter-kit.svg?style=flat-square)](https://gemnasium.com/rebem/starter-kit)
 
 WIP
