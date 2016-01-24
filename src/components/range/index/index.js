@@ -1,6 +1,6 @@
 import { BEM } from 'rebem';
 
-export default function(props) {
+export default function({ children, ...props }) {
     return BEM(
         {
             ...props,
@@ -8,6 +8,6 @@ export default function(props) {
             elem: 'index',
             tag: 'span'
         },
-        props.children
+        children
     );
 }

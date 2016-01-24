@@ -42,12 +42,16 @@ export default class extends Component {
     }
 
     render() {
+        const { mods, mix, ...props } = this.props;
+
         return BEM(
             {
-                block: 'range'
+                block: 'range',
+                mods,
+                mix
             },
             RangeInput({
-                ...this.props,
+                ...props,
                 value: this.state.index,
                 onChange: this._onRangeChange
             }),
