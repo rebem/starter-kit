@@ -10,6 +10,7 @@
   ],
   "dependencies": {
     "start": "1.2.x",
+    "start-eslint": "0.1.x",
     "del": "2.2.x",
 
     "webpack": "1.12.x",
@@ -41,7 +42,6 @@
     "node-dir": "0.1.x",
     "mkdirp": "0.5.x",
 
-    "eslint": "1.10.x",
     "babel-eslint": ">5.0.0-beta1",
     "eslint-plugin-babel": "3.0.x",
     "eslint-plugin-react": "3.15.x",
