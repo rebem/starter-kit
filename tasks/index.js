@@ -4,12 +4,12 @@ import clean from 'start-clean';
 export { webpackDev, webpackBuild } from './webpack';
 export { karmaBuild, karmaDev } from './karma';
 
-export const lint = [
-    eslint()
-];
+export const lint = eslint();
+export const cleanBuild = clean('build/');
+export const cleanCoverage = clean('coverage/');
 
 export const build = [
-    clean('build/'),
+    cleanBuild,
     exports.webpackBuild
 ];
 
@@ -18,11 +18,11 @@ export const dev = [
 ];
 
 export const tdd = [
-    clean('coverage/'),
+    cleanCoverage,
     exports.karmaDev
 ];
 
 export const test = [
-    eslint(),
+    lint,
     exports.karmaBuild
 ];
