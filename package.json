@@ -10,8 +10,8 @@
   ],
   "dependencies": {
     "start": "1.2.x",
-    "start-eslint": "0.1.x",
-    "del": "2.2.x",
+    "start-eslint": "0.2.x",
+    "start-clean": "0.1.x",
 
     "webpack": "1.12.x",
     "style-loader": "0.13.x",
@@ -72,7 +72,7 @@
     "dev": "npm run task dev",
     "start": "npm run dev",
 
-    "lint": "npm run task eslint",
+    "lint": "npm run task lint",
     "tdd": "npm run task tdd",
     "test": "npm run task test",
     "travis": "npm run test",

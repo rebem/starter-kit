@@ -1,11 +1,15 @@
-export { eslint } from 'start-eslint';
+import eslint from 'start-eslint';
+import clean from 'start-clean';
 
-export { cleanBuild, cleanCoverage } from './clean';
 export { webpackDev, webpackBuild } from './webpack';
 export { karmaBuild, karmaDev } from './karma';
 
+export const lint = [
+    eslint()
+];
+
 export const build = [
-    exports.cleanBuild,
+    clean('build/'),
     exports.webpackBuild
 ];
 
@@ -14,11 +18,11 @@ export const dev = [
 ];
 
 export const tdd = [
-    exports.cleanCoverage,
+    clean('coverage/'),
     exports.karmaDev
 ];
 
 export const test = [
-    exports.eslint,
+    eslint(),
     exports.karmaBuild
 ];
