@@ -8,8 +8,8 @@ WIP
 ## structure
 
 * `build/` – output folder
-* `conf/` – webpack configs
-* `tasks/` – start tasks
+* `conf/` – configs
+* `tasks.js` – [start](https://github.com/start-runner/start) tasks
 * `src/index.js` – main entry point
 
 ## install
@@ -23,13 +23,13 @@ npm i
 ### dev
 
 ```
-npm start
+npm start dev
 open http://localhost:3000/webpack-dev-server/
 ```
 
 ### build
 
 ```
-npm run build
+npm start build
 open build/index.html
 ```

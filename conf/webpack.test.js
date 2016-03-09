@@ -29,10 +29,11 @@ export default {
                             files: {
                                 main: 'index.js',
                                 styles: 'styles.less'
-                            }
+                            },
+                            importFactory: true
                         }
                     ],
-                    include: [
+                    consumers: [
                         path.resolve('src/index.js'),
                         path.resolve('test/')
                     ]

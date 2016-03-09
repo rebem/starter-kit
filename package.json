@@ -9,75 +9,66 @@
     "Denis Koltsov <iam@mistadikay.com> (https://github.com/mistadikay)"
   ],
   "dependencies": {
-    "start": "1.2.x",
-    "start-eslint": "0.2.x",
-    "start-clean": "0.1.x",
-
     "webpack": "1.12.x",
     "style-loader": "0.13.x",
     "css-loader": "0.23.x",
     "postcss-loader": "0.8.x",
     "autoprefixer": "6.3.x",
-    "less": "2.5.x",
+    "less": "2.6.x",
     "less-loader": "2.2.x",
     "json-loader": "0.5.x",
     "extract-text-webpack-plugin": "1.0.x",
-    "html-webpack-plugin": "2.7.x",
+    "html-webpack-plugin": "2.9.x",
 
-    "babel-cli": "6.4.x",
-    "babel-preset-es2015": "6.3.x",
-    "babel-preset-stage-1": "6.3.x",
-    "babel-plugin-transform-runtime": "6.4.x",
+    "babel-preset-es2015": "6.6.x",
+    "babel-preset-stage-1": "6.5.x",
+    "babel-plugin-transform-runtime": "6.6.x",
     "babel-loader": "6.2.x",
 
     "react": "0.14.x",
     "react-dom": "0.14.x",
-    "rebem": "0.3.x",
-    "rebem-layers-loader": "0.2.x",
-    "rebem-core-components": "0.2.x",
-    "rebem-theme-reset": "0.1.x"
+    "rebem": "0.7.x",
+    "rebem-layers-loader": "0.5.x",
+    "rebem-core-components": "0.3.x",
+    "rebem-theme-reset": "0.2.x"
   },
   "devDependencies": {
-    "husky": "0.10.x",
-    "node-dir": "0.1.x",
-    "mkdirp": "0.5.x",
+    "start": "4.x.x",
+    "start-babel-cli": "1.x.x",
+    "start-pretty-reporter": "0.x.x",
+    "start-env": "0.x.x",
+    "start-files": "0.x.x",
+    "start-clean": "1.x.x",
+    "start-eslint": "1.x.x",
+    "start-webpack": "0.x.x",
+    "start-karma": "0.x.x",
 
-    "babel-eslint": ">5.0.0-beta1",
-    "eslint-plugin-babel": "3.0.x",
-    "eslint-plugin-react": "3.15.x",
-    "eslint-config-rebem": "0.2.x",
-
-    "babel-preset-react-hmre": "1.0.x",
+    "babel-eslint": "5.0.x",
+    "eslint-plugin-babel": "3.1.x",
+    "eslint-plugin-react": "4.2.x",
+    "eslint-config-rebem": "0.3.x",
+    "babel-preset-react-hmre": "1.1.x",
 
     "react-addons-test-utils": "0.14.x",
 
     "webpack-dev-server": "1.14.x",
-    "babel-istanbul-loader": "0.0.x",
-    "mocha": "2.3.x",
-    "chai": "3.4.x",
+    "babel-istanbul-loader": "0.1.x",
+    "mocha": "2.4.x",
+    "chai": "3.5.x",
     "chai-spies": "0.7.x",
     "chai-bem": "1.3.x",
-    "karma": "0.13.x",
     "karma-mocha": "0.2.x",
-    "karma-mocha-reporter": "1.1.x",
-    "karma-jsdom-launcher": "1.0.x",
+    "karma-mocha-reporter": "2.0.x",
+    "karma-jsdom-launcher": "3.0.x",
     "karma-webpack": "1.7.x",
     "karma-coverage": "0.5.x",
-    "karma-clear-screen-reporter": "1.0.x"
+    "karma-clear-screen-reporter": "1.0.x",
+
+    "husky": "0.11.x"
   },
   "scripts": {
-    "task": "babel-node node_modules/.bin/start tasks/",
-
-    "build": "npm run task build",
-    "dev": "npm run task dev",
-    "start": "npm run dev",
-
-    "lint": "npm run task lint",
-    "tdd": "npm run task tdd",
-    "test": "npm run task test",
-    "travis": "npm run test",
-
-    "prepush": "npm run lint"
+    "start": "start-runner ./tasks.js",
+    "prepush": "npm start prepush"
   },
   "engines": {
     "node": ">=0.12",
