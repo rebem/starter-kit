@@ -51,6 +51,9 @@
     "eslint-config-rebem": "0.3.x",
     "babel-preset-react-hmre": "1.1.x",
 
+    "enzyme": "2.1.x",
+    "chai-enzyme": "0.4.x",
+    "rebem-enzyme": "0.3.x",
     "react-addons-test-utils": "0.14.x",
 
     "webpack-dev-server": "1.14.x",
