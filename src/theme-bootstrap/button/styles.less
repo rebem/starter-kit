@@ -1,0 +1,42 @@
+@import '~bootstrap/less/variables';
+@import '~bootstrap/less/pagination';
+@import '~bootstrap/less/mixins/border-radius';
+@import '~bootstrap/less/mixins/buttons';
+@import '~bootstrap/less/mixins/pagination';
+@import '~bootstrap/less/mixins/tab-focus';
+@import '~bootstrap/less/mixins/vendor-prefixes';
+
+.button {
+    &__control {
+        margin-bottom: 0;
+        font-weight: @btn-font-weight;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
+
+        &,
+        &:active,
+        &.active {
+            &:focus,
+            &.focus {
+              .tab-focus();
+            }
+        }
+
+        &:hover,
+        &:focus,
+        &.focus {
+            color: @btn-default-color;
+            text-decoration: none;
+        }
+
+        &:active,
+        &.active {
+            outline: 0;
+            background-image: none;
+            .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+        }
+        .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+    }
+}
