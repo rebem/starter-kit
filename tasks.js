@@ -51,3 +51,5 @@ export function tdd() {
         karma(require('./conf/karma.dev').default)
     );
 }
+
+export const prepush = test;
