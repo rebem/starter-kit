@@ -5,7 +5,7 @@
 
 React starter kit based on [reBEM](https://github.com/rebem) stack.
 
-![](docs/screenshot.png)
+<img src="docs/screenshot.png" width="400">
 
 ## Structure
 
@@ -42,6 +42,7 @@ open build/index.html
 ### Layers
 
 There are four [reBEM layers](https://github.com/rebem/layers-loader) in this starter kit:
+
 1. [reBEM core components](https://github.com/rebem/core-components)
 2. [reBEM reset theme](https://github.com/rebem/theme-reset)
 3. Simple inline theme based on [Bootstrap 3](https://github.com/twbs/bootstrap). It'll give you the basic understanding on how to create your own themes.
