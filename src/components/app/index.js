@@ -1,13 +1,29 @@
-import { BEM } from 'rebem';
+import { Component } from 'react';
+import { blockFactory } from 'rebem';
 
-import Range from '#range';
+import App from '#app';
+import Authentication from '#authentication';
+import Heading from '#heading';
+import Link from '#link';
 
-export default function(props) {
-    return BEM({ ...props, block: 'app' },
-        Range({
-            index: 5,
-            step: 5,
-            max: 20
-        })
-    );
+const block = 'app';
+const Block = blockFactory(block);
+
+export default class extends Component {
+    render() {
+        return App(this.props,
+            Block({ elem: 'header' },
+                Heading({
+                    mix: { block, elem: 'title' }
+                }, 'reBEM Starter Kit')
+            ),
+            Block({ elem: 'content' },
+                Authentication()
+            ),
+            Block({ elem: 'footer' },
+                'Made with ',
+                Link({ href: 'http://rebem.js.org/' }, 'reBEM')
+            )
+        );
+    }
 }
