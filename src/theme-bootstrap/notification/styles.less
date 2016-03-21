@@ -1,0 +1,27 @@
+@import '~bootstrap/less/variables';
+
+.notification {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-left-color: @brand-primary;
+    border-radius: 3px;
+
+    &_type {
+        &_success {
+            border-left-color: @brand-success;
+        }
+
+        &_info {
+            border-left-color: @brand-info;
+        }
+
+        &_error {
+            border-left-color: @brand-danger;
+        }
+
+        &_warning {
+            border-left-color: @brand-warning;
+        }
+    }
+}

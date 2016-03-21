@@ -46,9 +46,10 @@ export function test() {
 export function tdd() {
     return start(
         env('test'),
-        lint,
         files('coverage/'),
         clean(),
         karma(require('./conf/karma.dev').default)
     );
 }
+
+export const prepush = test;

@@ -1,3 +1,21 @@
 .app {
-    padding: 20px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    &__header {
+        padding: 20px;
+        color: #fff;
+        background: #337ab7;
+    }
+
+    &__content {
+        padding: 40px 20px;
+        flex: 1;
+    }
+
+    &__footer {
+        background: #ddd;
+        padding: 20px;
+    }
 }

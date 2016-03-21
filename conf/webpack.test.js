@@ -24,6 +24,7 @@ export default {
                     layers: [
                         require('rebem-core-components'),
                         require('rebem-theme-reset'),
+                        require('../src/theme-bootstrap'),
                         {
                             path: path.resolve('src/components/'),
                             files: {
