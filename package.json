@@ -29,7 +29,7 @@
 
     "react": "0.14.x",
     "react-dom": "0.14.x",
-    "rebem": "0.8.x",
+    "rebem": "0.9.x",
     "rebem-layers-loader": "0.5.x",
     "rebem-core-components": "0.3.x",
     "rebem-theme-reset": "0.2.x"
