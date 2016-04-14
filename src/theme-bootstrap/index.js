@@ -6,5 +6,5 @@ module.exports = {
         main: 'index.js',
         styles: 'styles.less'
     },
-    importFactory: true
+    importFactory: false
 };

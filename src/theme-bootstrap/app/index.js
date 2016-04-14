@@ -1,8 +1,7 @@
-import { BEM } from 'rebem';
+import React from 'react';
 
 export default function App({ children, ...props }) {
-    return BEM({
-        ...props,
-        block: 'app'
-    }, children);
+    return (
+        <div block="app" {...props}>{children}</div>
+    );
 }

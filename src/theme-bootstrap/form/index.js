@@ -1,9 +1,7 @@
-import { BEM } from 'rebem';
+import React from 'react';
 
 export default function({ children, ...props }) {
-    return BEM({
-        ...props,
-        block: 'form',
-        tag: 'form'
-    }, children);
+    return (
+        <form block="form" {...props}>{children}</form>
+    );
 }

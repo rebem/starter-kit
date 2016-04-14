@@ -1,11 +1,10 @@
+import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'rebem-enzyme';
 
 import App from '#app';
-
-// we import factory by default, but in tests we need class
-import Authentication from '#authentication?class';
-import Heading from '#heading?class';
+import Authentication from '#authentication';
+import Heading from '#heading';
 
 let renderedComponent = null;
 const block = 'app';
@@ -17,7 +16,7 @@ describe('App', function() {
 
     describe('render', function() {
         beforeEach(function() {
-            renderedComponent = shallow(App());
+            renderedComponent = shallow(<App/>);
         });
 
         describe('header elem', function() {

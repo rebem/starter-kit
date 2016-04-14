@@ -32,13 +32,13 @@ export default {
                             files: {
                                 main: 'index.js',
                                 styles: 'styles.less'
-                            },
-                            importFactory: true
+                            }
                         }
                     ],
                     consumers: [
                         path.resolve('src/index')
-                    ]
+                    ],
+                    importFactory: false
                 }
             },
             {

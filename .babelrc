@@ -1,6 +1,6 @@
 {
-  "presets": [ "es2015", "stage-1" ],
-  "plugins": [ "transform-runtime" ],
+  "presets": [ "es2015", "stage-1", "react" ],
+  "plugins": [ "transform-runtime", "transform-rebem-jsx" ],
   "env": {
     "development": {
       "presets": [ "react-hmre" ]

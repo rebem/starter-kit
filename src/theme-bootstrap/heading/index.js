@@ -1,16 +1,13 @@
-import { PropTypes } from 'react';
-import { BEM } from 'rebem';
+import React, { PropTypes } from 'react';
 
 export default function Heading({ children, type, ...props }) {
-    return BEM({
-        ...props,
-        tag: type,
-        block: 'heading',
-        mods: {
-            ...props.mods,
-            type
-        }
-    }, children);
+    const HeadingTag = type;
+
+    return (
+        <HeadingTag block="heading" mods={{ ...props.mods, type }}>
+            {children}
+        </HeadingTag>
+    );
 }
 
 Heading.defaultProps = {

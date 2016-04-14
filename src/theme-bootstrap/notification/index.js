@@ -1,15 +1,11 @@
-import { PropTypes } from 'react';
-import { BEM } from 'rebem';
+import React, { PropTypes } from 'react';
 
 export default function Notification({ children, ...props }) {
-    return BEM({
-        ...props,
-        block: 'notification',
-        mods: {
-            ...props.mods,
-            type: props.type || false
-        }
-    }, children);
+    return (
+        <div block="notification" mods={{ ...props.mods, type: props.type || false }} {...props}>
+            {children}
+        </div>
+    );
 }
 
 Notification.propTypes = {
